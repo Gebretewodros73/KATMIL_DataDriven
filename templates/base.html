@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> <!-- Custom Font -->
     <style>
         /* Custom CSS styles */
-        /* Add your custom styles here */
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #2c3e50 !important;
+        }
+        .navbar-brand:hover {
+            color: #1abc9c !important;
+        }
+        .navbar {
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .navbar-light .navbar-nav .nav-link {
+            color: #2c3e50;
+        }
+        .navbar-light .navbar-nav .nav-link:hover {
+            color: #1abc9c;
+        }
+        .container {
+            margin-top: 2rem;
+        }
     </style>
 </head>
 <body>
