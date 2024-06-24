@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reinforcement Bar Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 20px;
+        }
+        .header .text {
+            flex: 1;
+        }
+        .header .logo-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .header h1 {
+            font-size: 18px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .logo img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            aspect-ratio: 2.5 / 3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .decision {
+            margin-top: 20px;
+        }
+        .signatures {
+            margin-top: 20px;
+        }
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section div {
+            width: 45%;
+        }
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                border: none;
+                box-sizing: border-box;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="text">
+            <h1>CHECKLIST FOR REINFORCEMENT PERMIT</h1>
+            <p>Project: 3B+G+30 Building</p>
+            <p>Client: KATMIL</p>
+            <p>Architect/Consultant: JCB CONSULT PLC.</p>
+            <p>Contractor: BINYAM MELESE BUILDING AND ROAD CONTRACTOR.</p>
+            <p>Site Location: KASANCHIS </p>
+            <p>Block: Axes: _________________</p>
+            <p>Document Referred: Floor: __________________________________________________</p>
+        </div>
+        <div class="logo-container">
+            <div>
+                <p>Format Number: JCB/CWICH/002</p>
+                <p>Format made in 2 copies</p>
+            </div>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo1.png') }}" alt="Company Logo">
+            </div>
+        </div>
+    </div>
+
+    <p><strong>N.B:</strong> The Architect's staff on site should mark the corresponding boxes with a tick, sign, file one copy, and give back the other copy to the contractor.</p>
+
+    <table>
+        <tr>
+            <th>Checklist Title: REINFORCEMENT BAR</th>
+            <th>Confirming</th>
+            <th>Non Confirming</th>
+            <th>Not Applicable</th>
+        </tr>
+        <tr>
+            <td><strong>Quality Testing:</strong> Ensure that the reinforcement materials undergo rigorous quality testing to meet industry standards and project specifications.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Shop Drawings:</strong> Verify the submittal of shop drawings and bar schedules.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Handling and Storage:</strong> Ensure proper handling and storage of reinforcement (raised from ground, protected from weather effects, and placed in an appropriate location to avoid hindrance to work progress).</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Cleanliness:</strong> Ensure that reinforcement is free from dirt, oil, paint, rust, and other foreign substances.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Placement Readiness:</strong> Confirm that reinforcement is ready to be placed as per the drawing specifications.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Concrete Cover Spacers:</strong> Verify the availability and proper use of spacers for concrete cover (shape, dimension, and type of spacer).</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Displacement Prevention:</strong> Review the proposed method to prevent displacement of reinforcement within tolerance limits.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Contact with Release Agent:</strong> Ensure that there is no contact between release agents and reinforcement bars to avoid any impact on the finished work quality.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Additional Remarks</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <div class="decision">
+        <p>The above items are fulfilled …… not fulfilled….., the contractor is hereby allowed …../ refused ….. to proceed. The take off sheet of this activity shall immediately be signed upon completion.</p>
+    </div>
+
+    <div class="signatures">
+        <div class="signature-section">
+            <div>
+                <p>For the Architect/Consultant</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+            <div>
+                <p>For the Contractor</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

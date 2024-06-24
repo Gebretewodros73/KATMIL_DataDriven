@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Diary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header img {
+            height: 100px;
+        }
+        .title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .title p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="{{ url_for('static', filename='logo1.png') }}" alt="Company Logo">
+        </div>
+        <h1>JCB CONSULT PLC. CAE</h1>
+    </div>
+    <div class="section-title">1. General Information</div>
+
+    <div class="title">
+        <p>Project: 3B+G+30 Building</p>
+        <p>Client: KATMIL</p>
+        <p>Architect/Consultant: JCB CONSULT PLC.</p>
+        <p>Contractor: BINYAM MELESE BUILDING AND ROAD CONTRACTOR.</p>
+        <p>Site Location: KASANCHIS</p>
+    </div>
+    <div class="section-title">2. Weather Condition</div>
+    <table>
+        <tr>
+            <th>Fine</th>
+            <th>Good</th>
+            <th>Bad</th>
+            <th>Lost Hrs.</th>
+            <th>Remark</th>
+        </tr>
+        <td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </td>
+    </table>
+
+    <div class="section-title">3. Description of the day's weather conditions</div>
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="section-title">4. Direct labor and Stuff</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Number</th>
+                <th>Remark</th>
+            </tr>
+            <tr>
+                <td colspan="3">Direct Labor</td>
+            </tr>
+        </thead>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td colspan="3">Stuff</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    <div class="section-title">5. Major Equipment</div>
+        <table>
+            <thead>
+            <tr>
+                <th>Description</th>
+                <th>Unit</th>
+                <th>Worked Hours</th>
+                <th>Idle Hrs</th>
+                <th>Down (Hr)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Add data rows here -->
+        </tbody>
+    </table>
+
+    <div class="section-title">6. Dump Trucks and Small vehicles deployed during the day</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Plate No</th>
+                <th>Activity Description</th>
+                <th>Capacity</th>
+                <th>Worked Hours</th>
+                <th>Remark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Add data rows here -->
+        </tbody>
+    </table>
+
+    <div class="section-title">7. Description of works performed during the day</div>
+    <table>
+        <thead>
+            <tr>
+                <th>Activity Description</th>
+                <th>Location</th>
+                <th>Unit</th>
+                <th>Qty</th>
+                <th>Unit Price</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <!-- Add data rows here -->
+        </tbody>
+    </table>
+
+    <div class="section-title">8. Remarks (delay, interruption, accident, reworks, changes, variations, etc.)</div>
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="section-title">9. Work done during non-working holidays</div>
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+
+    <div class="section-title">Comment by Supervision</div>
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+        </tr>
+    </table>
+        <div class="signature-section">
+            <div>
+                <p>For the Architect/Consultant</p>
+            </div>
+            <div>
+                <p>For the Contractor</p>
+            </div>
+        </div>
+</body>
+</html>

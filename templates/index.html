@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Welcome to Site Diary DYG</h2>
+<p>Select a checklist to fill out:</p>
+<ul>
+    <li><a href="{{ url_for('formwork_checklist') }}">Formwork Checklist</a></li>
+    <li><a href="{{ url_for('reinforcement_checklist') }}">Reinforcement Checklist</a></li>
+    <li><a href="{{ url_for('concrete_checklist') }}">Concrete Checklist</a></li>
+    <li><a href="{{ url_for('nightwork_checklist') }}">Night Work Checklist</a></li>
+    <li><a href="{{ url_for('electrical_checklist') }}">Electrical Checklist</a></li>
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('resum') }}">About</a></li>
+</ul>
+{% endblock %}

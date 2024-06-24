@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Showcase{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1 class="my-4">Data Collection and Reporting Showcase</h1>
+
+    <!-- Section: Data Collection from Telegram -->
+    <div class="mb-4">
+        <h2>Data Collection from Telegram</h2>
+        <p>We utilize Telegram for real-time data collection and communication. Below is a screenshot of our Telegram data collection interface:</p>
+        <img src="{{ url_for('static', filename='images/telegram_screenshot.png') }}" class="img-fluid" alt="Telegram Data Collection Screenshot">
+    </div>
+
+    <!-- Section: Reports from Google -->
+    <div class="mb-4">
+        <h2>Google Reports</h2>
+        <p>Our Google reports provide detailed insights and analytics. Below is a screenshot of our reporting dashboard:</p>
+        <img src="{{ url_for('static', filename='images/google_report_screenshot.png') }}" class="img-fluid" alt="Google Report Screenshot">
+    </div>
+
+    <!-- Section: Currently Active Sites -->
+    <div class="mb-4">
+        <h2>Currently Active Sites</h2>
+        <p>Here are some photos of our currently active construction sites where our data collection is taking place:</p>
+        <img src="{{ url_for('static', filename='images/active_site_1.png') }}" class="img-fluid" alt="Active Site 1">
+        <img src="{{ url_for('static', filename='images/active_site_2.png') }}" class="img-fluid" alt="Active Site 2">
+    </div>
+
+    <!-- Section: Future Plans -->
+    <div class="mb-4">
+        <h2>Future Plans</h2>
+        <p>Our biggest aim is to solve contract document issues using collected data, prepare bid documents, provide real-time proforma of needed materials, equipment, and machinery, and profile contractors based on their performance.</p>
+        <ul>
+            <li>Contract Document Solutions</li>
+            <li>Bid Document Preparation</li>
+            <li>Real-time Proforma of Materials, Equipment, and Machinery</li>
+            <li>Contractor Profile and Performance Management</li>
+            <!-- Add more items as needed -->
+        </ul>
+    </div>
+</div>
+{% endblock %}

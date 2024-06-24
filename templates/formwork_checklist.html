@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formwork Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 20px;
+        }
+        .header .text {
+            flex: 1;
+        }
+        .header .logo-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .header h1 {
+            font-size: 18px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .logo img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            aspect-ratio: 2.5 / 3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .decision {
+            margin-top: 20px;
+        }
+        .signatures {
+            margin-top: 20px;
+        }
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section div {
+            width: 45%;
+        }
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                border: none;
+                box-sizing: border-box;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="text">
+            <h1>CHECKLIST FORMWORK PERMIT</h1>
+            <p>Project: 3B+G+30 Building</p>
+            <p>Client: KATMIL</p>
+            <p>Architect/Consultant: JCB CONSULT PLC.</p>
+            <p>Contractor: BINYAM MELESE BUILDING AND ROAD CONTRACTOR.</p>
+            <p>Site Location: KASANCHIS </p>
+            <p>Block: Axes: _________________</p>
+            <p>Document Referred: Floor: __________________________________________________</p>
+        </div>
+        <div class="logo-container">
+            <div>
+                <p>Format Number: JCB/CWICH/001</p>
+                <p>Format made in 2 copies</p>
+            </div>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo1.png') }}" alt="Company Logo">
+            </div>
+        </div>
+    </div>
+
+    <p><strong>N.B:</strong> The Architect's staff on site should mark the corresponding boxes with a tick, sign, file one copy, and give back the other copy to the contractor.</p>
+
+    <table>
+        <tr>
+            <th>Check list title: FORMWORK: SHEAR WALL & RETAINING</th>
+            <th>Confirming</th>
+            <th>Non Confirming</th>
+            <th>Not applicable</th>
+        </tr>
+        <tr>
+            <td>Submittal of formwork design with representative sketch showing size, shape,location of opening for pouring concrete, strength</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>RRigidity, bracing detail, method of fixing, method of removing the form, detail at joints, method to be used for grouting, method to be used for keeping the formwork in position during placing of concrete</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Cleanliness of formwork surfaces from any debris, oil, or other contaminants</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Type of material to be used for formwork</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Method used to treat the formwork for preventing adherence of concrete (e.g.,use of oil or other release agents)</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Cleanliness and smoothness of surfaces of forms to be used</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Proper alignment and positioning of formwork as per design</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Ensuring formwork is rigid and properly braced to withstand the pressure of concrete during pouring</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Provision for any openings or inserts as per design</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Conformity of proper dimensions of the finished surface (e.g., using formwork with height not more than the finished level of column)</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Method of removing formwork without damaging the concrete</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Additional Remarks</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <div class="decision">
+        <p>The above items are fulfilled …… not fulfilled….., the contractor is hereby allowed …../ refused ….. to proceed. The take off sheet of this activity shall immediately be signed upon completion.</p>
+    </div>
+
+    <div class="signatures">
+        <div class="signature-section">
+            <div>
+                <p>For the Architect/Consultant</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+            <div>
+                <p>For the Contractor</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

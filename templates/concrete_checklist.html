@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Work Permission Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 20px;
+        }
+        .header .text {
+            flex: 1;
+        }
+        .header .logo-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .header h1 {
+            font-size: 18px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .logo img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            aspect-ratio: 2.5 / 3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .checkbox {
+            justify-content: space-between;
+        }
+        .checkbox input {
+            margin-left: 30px;
+        }
+        .decision {
+            margin-top: 20px;
+        }
+        .signatures {
+            margin-top: 20px;
+        }
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section div {
+                width: 45%;
+        }
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                border: none;
+                box-sizing: border-box;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="text">
+            <h1>CONCRETE WORK PERMISSION CHECKLIST</h1>
+            <p>Project: 3B+G+30 Building</p>
+            <p>Client: KATMIL</p>
+            <p>Architect/Consultant: JCB CONSULT PLC.</p>
+            <p>Contractor: BINYAM MELESE BUILDING AND ROAD CONTRACTOR.</p>
+            <p>Site Location: KASANCHIS </p>
+            <p>Block: Axes: _________________</p>
+            <p>Document Referred: Floor: __________________________________________________</p>
+        </div>
+        <div class="logo-container">
+            <div>
+                <p>Format Number: JCB/CWICH/003</p>
+                <p>Format made in 2 copies</p>
+            </div>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo1.png') }}" alt="Company Logo">
+            </div>
+        </div>
+    </div>
+
+    <p><strong>N.B:</strong> The Architect's staff on site should mark the corresponding boxes with a tick, sign, file one copy, and give back the other copy to the contractor.</p>
+
+    <table>
+        <tr>
+            <th>Checklist Title: CONCRETE WORK PERMISSION</th>
+            <th>Confirming</th>
+            <th>Non Confirming</th>
+            <th>Not Applicable</th>
+        </tr>
+        <tr>
+            <td><strong>Submittal of Mix Proportion:</strong> Verify that the mix design and proportions have been submitted and approved.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Footing Formwork Check:</strong> Ensure that the formwork for the footing is correctly positioned, level, and aligned.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Spacer Position:</strong> Check the placement and adequacy of spacers to ensure proper concrete cover.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Formwork Rigidity:</strong> Confirm the rigidity of scaffolding and shuttering formwork to prevent displacement during concrete pouring.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Leak Tightness:</strong> Ensure that joints between formwork elements are leak-proof.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Cleanliness of Formwork:</strong> Check that the formwork is clean and free from debris, oil, or other contaminants.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Cleanliness of Lean Concreted Area:</strong> Verify that the area where lean concrete has been placed is clean and prepared for subsequent work.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Surface Condition of Reinforcement:</strong> Inspect the reinforcement to ensure it is free from dirt, oil, rust, and other contaminants.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Reinforcement Details:</strong> Confirm the diameter, location, spacing, required length, number, shape, and bonding dimensions of reinforcement for both footing and foundation columns.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Foundation Column Reinforcement Positioning:</strong> Ensure the proper positioning and alignment of foundation column reinforcement with the footing.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Alignment of Foundation Column Reinforcement:</strong> Verify the centering and alignment of foundation column reinforcements.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Concrete Pouring Method:</strong> Check the method used for pouring concrete to avoid segregation (e.g., chute, downpipe, trucking, or any other method).</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Additional Remarks</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <div class="decision">
+        <p>The above items are fulfilled …… not fulfilled….., the contractor is hereby allowed …../ refused ….. to proceed. The take off sheet of this activity shall immediately be signed upon completion.</p>
+    </div>
+
+    <div class="signatures">
+        <div class="signature-section">
+            <div>
+                <p>For the Architect/Consultant</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+            <div>
+                <p>For the Contractor</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

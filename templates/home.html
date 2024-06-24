@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to DataDriven Construction Solutions</h1>
+        <p class="lead">Revolutionizing the construction industry with real-time data analytics.</p>
+        <hr class="my-4">
+        <p>Our platform provides comprehensive, real-time data analytics that empower construction professionals to make informed decisions, enhance project management efficiency, and predict project outcomes with greater accuracy.</p>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="{{ url_for('concrete_checklist') }}">Concrete Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('reinforcement_checklist') }}">Reinforcement Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('formwork_checklist') }}">Formwork Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('electrical_checklist') }}">Electrical Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('nightwork_checklist') }}">Night Work Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('dailydiary_checklist') }}">Daily Diary</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2>Why Choose Us?</h2>
+        <p>🛠️ Innovative Solutions: We're at the forefront of innovation, continuously developing and refining our technology to meet the evolving needs of the construction industry.</p>
+        <p>📊 Data-Driven Insights: Our platform harnesses the power of data to provide actionable insights that drive better project outcomes, cost control, and resource allocation.</p>
+        <p>🤝 Industry Expertise: Backed by a team of experienced professionals with deep industry knowledge, we understand the unique challenges and opportunities within the construction sector.</p>
+        <p>🌐 Scalable and Flexible: Whether you're a small construction firm or a large-scale developer, our solutions are scalable and adaptable to meet your specific requirements.</p>
+    </div>
+{% endblock %}

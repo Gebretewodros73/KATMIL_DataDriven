@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concrete Work Permission Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 20px;
+        }
+        .header .text {
+            flex: 1;
+        }
+        .header .logo-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .header h1 {
+            font-size: 18px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .logo img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            aspect-ratio: 2.5 / 3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .decision {
+            margin-top: 20px;
+        }
+        .signatures {
+            margin-top: 20px;
+        }
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section div {
+            width: 45%;
+        }
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                border: none;
+                box-sizing: border-box;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="text">
+            <h1>ELECTRICAL WORK PERMISSION CHECKLIST</h1>
+            <p>Project: 3B+G+30 Building</p>
+            <p>Client: KALTMIL</p>
+            <p>Architect/Consultant: JCB CONSULT PLC.</p>
+            <p>Contractor: BINYAM MELESE BUILDING AND ROAD CONTRACTOR.</p>
+            <p>Site Location: KASANCHIS </p>
+            <p>Block: Axes: _________________</p>
+            <p>Document Referred: Floor: __________________________________________________</p>
+        </div>
+        <div class="logo-container">
+            <div>
+                <p>Format Number: JCB/CWICH/003</p>
+                <p>Format made in 2 copies</p>
+            </div>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo1.png') }}" alt="Company Logo">
+            </div>
+        </div>
+    </div>
+
+    <p><strong>N.B:</strong> The Architect's staff on site should mark the corresponding boxes with a tick, sign, file one copy, and give back the other copy to the contractor.</p>
+
+    <table>
+        <tr>
+            <th>Checklist Title: ELECTRICAL WORK PERMISSION</th>
+            <th>Confirming</th>
+            <th>Non Confirming</th>
+            <th>Not Applicable</th>
+        </tr>
+        <tr>
+            <td><strong>Qualification of Electrical Grade:</strong> Verify the qualification of the electrical grade used in the project.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Location:</strong> Confirm the location of the installation (Slab, Wall, Normal Ceiling).</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Material Approval:</strong> Verify the approval slip number for the materials used.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Conduit Nature:</strong> Check the type of conduits being used (Rigid/Flexible).</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Conduit Size:</strong> Mention and verify the size of the conduits used.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Junction Box Size and Nature:</strong> Verify the size and nature of the junction boxes used.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Shape of Junction Boxes:</strong> Confirm the shape of junction boxes (Polygonal, Circular).</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Filler of Inverted Box:</strong> Check the filler material used for inverted boxes.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Connection to Formwork/Wall:</strong> Ensure the connection of conduits to formwork or walls is secure.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Size of Pins/Brackets:</strong> Verify the size of pins or brackets used for surface mounting.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Protection Measures:</strong> Confirm the measures taken to protect conduits from breakage or displacement.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Method of Bending/Shaping:</strong> Check the method used for bending and shaping conduits.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Junction of Conduits and Boxes:</strong> Ensure proper junction of conduits and boxes.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Method of Keeping in Position:</strong> Verify the method used to keep conduits in their correct position.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Element for Wire Pulling:</strong> Check the availability of elements required for wire pulling.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Location of Fire Place for Shaping Work:</strong> Confirm the location used for shaping work involving fire.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Overlap in Conduit Connection:</strong> Verify the overlap in conduit connections to ensure continuity.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Approximate Length of Embedded Conduit:</strong> Ensure the approximate length of embedded conduit is as per the design.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Method of Crossing Structural Frames:</strong> Verify the method used for crossing conduits in structural frames.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Cover to Embedded Conduits:</strong> Ensure proper cover is provided to embedded conduits as per the design.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Additional Remarks</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <div class="decision">
+        <p>The above items are fulfilled …… not fulfilled….., the contractor is hereby allowed …../ refused ….. to proceed. The take off sheet of this activity shall immediately be signed upon completion.</p>
+    </div>
+
+    <div class="signatures">
+        <div class="signature-section">
+            <div>
+                <p>For the Architect/Consultant</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+            <div>
+                <p>For the Contractor</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+{% extends "base.html" %}
+{% block title %}Showcase{% endblock %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tewodros Gebre | DataDriven Construction Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a8d8 3px solid;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #77a8d8;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('static/images/construction.jpg') no-repeat 0 -400px;
+            text-align: center;
+            color: #fff;
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        .button {
+            display: inline-block;
+            color: #333;
+            background: #77a8d8;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .section {
+            padding: 20px 0;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .content .box {
+            width: 45%;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .team .member {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            margin: 10px;
+            padding: 10px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .team img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Tewodros Gebre</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to DataDriven Construction Solutions</h1>
+            <p>Revolutionizing Construction with Real-Time Data Analytics</p>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am Tewodros Gebre, a seasoned civil engineer with over 10 years of experience in project management, site supervision, and construction engineering. As the Founder and CEO of DataDriven Construction Solutions, I am passionate about transforming the construction industry through innovative data analytics and technology solutions.</p>
+            <p>My journey has been defined by a commitment to excellence, cost-efficiency, and safety, culminating in the successful completion of numerous large-scale construction projects.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="content">
+                <div class="box">
+                    <h3>Data Analytics Platform</h3>
+                    <p>We provide comprehensive, real-time data analytics tailored for the construction sector. Our platform enables better project management, cost control, and resource allocation.</p>
+                </div>
+                <div class="box">
+                    <h3>Real-Time Data Collection</h3>
+                    <p>We implement real-time data collection tools, such as IoT devices and mobile apps, to gather crucial data from construction sites, providing predictive analytics and reporting features.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="team" class="section">
+        <div class="container">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/tewodros_gebre.jpg') }}" alt="Tewodros Gebre">
+                    <h3>Tewodros Gebre</h3>
+                    <p>CEO</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/kalkidan_hailemichael.jpg') }}" alt="Kalkidan Hailemichael">
+                    <h3>Kalkidan Hailemichael</h3>
+                    <p>Co-founder and Contract Administrator</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/tizazu_abdu.jpg') }}" alt="Tizazu Abdu">
+                    <h3>Tizazu Abdu</h3>
+                    <p>Co-founder, Quantity Surveyor and Site Supervisor</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/mohammed_nuredin.jpg') }}" alt="Mohammed Nuredin">
+                    <h3>Mohammed Nuredin</h3>
+                    <p>Co-founder and Material Inspector</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/dagim_teshome.jpg') }}" alt="Dagim Teshome">
+                    <h3>Dagim Teshome</h3>
+                    <p>Co-founder and IT Department Head</p>
+                </div>
+                <div class="member">
+                    <img src="{{ url_for('static', filename='images/zerihun_gashaw.jpg') }}" alt="Zerihun Gashaw">
+                    <h3>Zerihun Gashaw</h3>
+                    <p>Co-founder, Backend Developer and Foundation Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Gulele, Addis Ababa, Ethiopia</p>
+            <p>Mobile: +251964108463</p>
+            <p>Email: gebretewodros73@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/tewodros-gebre-14ba68116" target="_blank">Tewodros Gebre</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>DataDriven Construction Solutions &copy; 2024</p>
+    </footer>
+</body>
+</html>
+{% endblock %}

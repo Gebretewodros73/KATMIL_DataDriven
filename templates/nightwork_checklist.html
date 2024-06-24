@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Work Permission Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding-bottom: 20px;
+        }
+        .header .text {
+            flex: 1;
+        }
+        .header .logo-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        .header h1 {
+            font-size: 18px;
+        }
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .logo img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            aspect-ratio: 2.5 / 3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #000;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        .decision {
+            margin-top: 20px;
+        }
+        .signatures {
+            margin-top: 20px;
+        }
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section div {
+            width: 45%;
+        }
+        @media print {
+            body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                border: none;
+                box-sizing: border-box;
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <div class="text">
+            <h1>NIGHT WORK PERMISSION CHECKLIST</h1>
+            <p>Project: 3B+G+30 Building</p>
+            <p>Client: KATMIL</p>
+            <p>Architect/Consultant: JCB CONSULT PLC.</p>
+            <p>Contractor: BINYAM MELESE BUILDING AND ROAD CONTRACTOR.</p>
+            <p>Site Location: KASANCHIS </p>
+            <p>Block: Axes: _________________</p>
+            <p>Document Referred: Floor: __________________________________________________</p>
+        </div>
+        <div class="logo-container">
+            <div>
+                <p>Format Number: JCB/CWICH/004</p>
+                <p>Format made in 2 copies</p>
+            </div>
+            <div class="logo">
+                <img src="{{ url_for('static', filename='logo1.png') }}" alt="Company Logo">
+            </div>
+        </div>
+    </div>
+
+    <p><strong>N.B:</strong> The Architect's staff on site should mark the corresponding boxes with a tick, sign, file one copy, and give back the other copy to the contractor.</p>
+
+    <table>
+        <tr>
+            <th>Checklist Title: NIGHT WORK PERMISSION</th>
+            <th>Confirming</th>
+            <th>Non Confirming</th>
+            <th>Not Applicable</th>
+        </tr>
+        <tr>
+            <td><strong>Urgency of the Intended Work:</strong> Assess the urgency and necessity of conducting the work during nighttime.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Declaration of Proposed Work:</strong> Ensure that the scope and details of the proposed night work are clearly declared.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Permission from Concerned Authorities:</strong> Verify that necessary permissions from relevant authorities have been obtained.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Sufficiency of Raw Materials:</strong> Confirm that the volume of raw materials is sufficient for the proposed night work.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Light Sufficiency:</strong> Ensure that there is adequate lighting for nighttime operations.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Lighting Availability and Sufficiency:</strong> Check the availability and adequacy of lighting in key areas:</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;a. Around raw material sources</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;b. Around machinery locations</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;c. Around storage areas</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;d. Access to site clinic</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;e. Access to temporary facilities (lavatory, potable water, etc.)</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;f. Around the actual work area</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Site Safety Conditions:</strong> Assess the safety conditions of the site:</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;a. Availability of an ambulance/allocated vehicle</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;b. Availability of treatment facilities/capable personnel</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;c. Transportation facilities for workmen</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;d. Security conditions for labor safety</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;e. Safe access to the workplace</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;&nbsp;&nbsp;f. Stability of erected labor access (ascending, descending, etc.)</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td><strong>Fulfillment of Inspection Checklist Format:</strong> Ensure that the inspection checklist format is properly completed and fulfilled.</td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+            <td class="checkbox"><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>Additional Remarks</td>
+            <td colspan="3"></td>
+        </tr>
+    </table>
+
+    <div class="decision">
+        <p>The above items are fulfilled …… not fulfilled….., the contractor is hereby allowed …../ refused ….. to proceed. The take off sheet of this activity shall immediately be signed upon completion.</p>
+    </div>
+
+    <div class="signatures">
+        <div class="signature-section">
+            <div>
+                <p>For the Architect/Consultant</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+            <div>
+                <p>For the Contractor</p>
+                <p>Name:</p>
+                <p>Signature:</p>
+                <p>Date:</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
