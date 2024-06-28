@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -55,6 +55,10 @@ def about():
 def showcase():
     return render_template('showcase.html', title='Showcase')
 
+@app.route('/formats')
+def formats():
+    return render_template('formats.html', title='Forms')
+
 @app.route('/submit', methods=['POST'])  # Corrected the methods string
 def submit():
     checklist_type = request.form.get('checklist_type')
@@ -77,10 +81,9 @@ def submit():
     
     return render_template('result.html', confirmed=confirmed_count, not_confirmed=not_confirmed_count, not_applicable=not_applicable_count)
 
-
-# Define other routes...
+# Ensure to add other routes as needed for your application.
 
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+    app.run(debug=True, port=5000)

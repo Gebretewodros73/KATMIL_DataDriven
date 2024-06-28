@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}DataDriven Construction Solutions{% endblock %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>DataDriven Construction Solutions</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">DataDriven Solutions</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-4">Welcome to DataDriven Construction Solutions</h1>
+        <p class="lead">Revolutionizing the construction industry with real-time data analytics.</p>
+        <hr class="my-4">
+        <p>Our platform provides comprehensive, real-time data analytics that empower construction professionals to make informed decisions, enhance project management efficiency, and predict project outcomes with greater accuracy.</p>
+        <ul class="list-group">
+            <li class="list-group-item"><a href="{{ url_for('concrete_checklist') }}">Concrete Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('reinforcement_checklist') }}">Reinforcement Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('formwork_checklist') }}">Formwork Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('electrical_checklist') }}">Electrical Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('nightwork_checklist') }}">Night Work Checklist</a></li>
+            <li class="list-group-item"><a href="{{ url_for('dailydiary_checklist') }}">Daily Diary</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Why Choose Us?</h2>
+        <p>🛠️ Innovative Solutions: We're at the forefront of innovation, continuously developing and refining our technology to meet the evolving needs of the construction industry.</p>
+        <p>📊 Data-Driven Insights: Our platform harnesses the power of data to provide actionable insights that drive better project outcomes, cost control, and resource allocation.</p>
+        <p>🤝 Industry Expertise: Backed by a team of experienced professionals with deep industry knowledge, we understand the unique challenges and opportunities within the construction sector.</p>
+        <p>🌐 Scalable and Flexible: Whether you're a small construction firm or a large-scale developer, our solutions are scalable and adaptable to meet your specific requirements.</p>
+    </div>
+
+    <footer class="footer bg-light text-center py-3">
+        <p>© 2024 DataDriven Construction Solutions. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:info@datadriven.com">info@datadriven.com</a></p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+{% endblock %}

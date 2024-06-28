@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+.intro, .data-collection, .data-capture {
+    padding: 2em;
+    background-color: white;
+    margin-bottom: 1em;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro .image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro .text {
+    max-width: 60%;
+}
+
+.intro button {
+    padding: 0.5em 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.intro button:hover {
+    background-color: #0056b3;
+}
+
+.data-collection h2, .data-capture h2 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.data-collection p, .data-capture p {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.data-collection button {
+    display: block;
+    margin: 0 auto 2em auto;
+    padding: 0.5em 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.data-collection button:hover {
+    background-color: #0056b3;
+}
+
+.data-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.data-items .item {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.data-items .item button {
+    padding: 0.5em 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.data-items .item button:hover {
+    background-color: #0056b3;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+.features .feature {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 5px;
+    text-align: center;
+}
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}

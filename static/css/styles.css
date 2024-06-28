@@ -85,3 +85,53 @@ footer {
 .checklist-button:hover {
     background: #0056b3;
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply background image to the body */
+body {
+    background-image: url('{{ url_for('static', filename='images/background.jpg') }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    text-align: center;
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: To make text readable */
+    color: white;
+}
+
+.intro, .data-collection, .data-capture {
+    background: rgba(255, 255, 255, 0.8); /* Optional: To make text readable */
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

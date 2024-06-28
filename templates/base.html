@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% endblock %}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet"> <!-- Custom Font -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Custom CSS -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo.png') }}">
     <style>
-        /* Custom CSS styles */
+        /* Custom CSS styles specific to this base template */
         body {
             font-family: 'Poppins', sans-serif;
         }
@@ -31,6 +34,13 @@
         .container {
             margin-top: 2rem;
         }
+        .card {
+            transition: transform 0.2s;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }        
     </style>
 </head>
 <body>
@@ -46,10 +56,13 @@
                     <a class="nav-link" href="{{ url_for('home') }}">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('showcase') }}">How We Collect Data</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="{{ url_for('about') }}">About The Company</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ url_for('showcase') }}">Showcase</a>
+                    <a class="nav-link" href="{{ url_for('formats') }}">Forms</a>
                 </li>
                 <!-- Add other navigation links here -->
             </ul>
