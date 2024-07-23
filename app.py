@@ -6,18 +6,18 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # Configuration settings
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///checklist.db'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-app.config['SECRET_KEY'] = 'your_secret_key_here'  # Remember to change this to a secure value in production
+# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///checklist.db'
+# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+# app.config['SECRET_KEY'] = 'your_secret_key_here'  # Remember to change this to a secure value in production
 
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
 
-class Checklist(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    checklist_type = db.Column(db.String(50))
-    confirmed = db.Column(db.Integer)
-    not_confirmed = db.Column(db.Integer)
-    not_applicable = db.Column(db.Integer)
+# class Checklist(db.Model):
+    # id = db.Column(db.Integer, primary_key=True)
+    # checklist_type = db.Column(db.String(50))
+    # confirmed = db.Column(db.Integer)
+    # not_confirmed = db.Column(db.Integer)
+    # not_applicable = db.Column(db.Integer)
 
 @app.route('/')
 def home():
@@ -59,8 +59,8 @@ def showcase():
 def formats():
     return render_template('formats.html', title='Forms')
 
-@app.route('/submit', methods=['POST'])  # Corrected the methods string
-def submit():
+#@app.route('/submit', methods=['POST'])  # Corrected the methods string
+#def submit():
     checklist_type = request.form.get('checklist_type')
     confirmed = request.form.getlist('confirmed')
     not_confirmed = request.form.getlist('not_confirmed')
@@ -85,5 +85,4 @@ def submit():
 
 if __name__ == '__main__':
     with app.app_context():
-        db.create_all()
-    app.run(debug=True, port=5000)
+        app.run()
